@@ -1,0 +1,27 @@
+<div class="jumbotron">
+    <div class="container" style="padding-top: 1%;">
+        <a [routerLink]="[ '/view' ]" routerLinkActive="active" class="btn btn-primary">Show DataBase</a>   
+        <h1 class="text-center">Add Students</h1>
+        <form [formGroup]="addForm" novalidate class="form">
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname" placeholder="First Name" formControlName="fname" class="form-control">
+                <small style="color: red;font-style: italic;" class="alert alert-box" *ngIf="addForm.get('fname').hasError('required') && addForm.get('fname').touched">Please Enter First Name</small>
+                <small style="color: red;font-style: italic;" class="alert alert-box" *ngIf="addForm.get('fname').hasError('maxlength') && addForm.get('fname').touched">Maximum 10 Characters Are Allowed!!</small>
+            </div>
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" placeholder="Last Name" formControlName="lname" class="form-control">
+                <small style="color: red;font-style: italic;" class="alert alert-box" *ngIf="addForm.get('lname').hasError('required') && addForm.get('lname').touched">Please Enter Last Name</small>
+                <small style="color: red;font-style: italic;" class="alert alert-box" *ngIf="addForm.get('lname').hasError('maxlength') && addForm.get('lname').touched">Maximum 10 Characters Are Allowed!!</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" name="email" placeholder="Email ID" formControlName="email" class="form-control">
+                <small style="color: red;font-style: italic;" class="alert alert-box" *ngIf="addForm.get('email').hasError('required') && addForm.get('email').touched">Please Enter Email ID</small>
+                <small style="color: red;font-style: italic;" class="alert alert-box" *ngIf="addForm.get('email').hasError('maxlength') && addForm.get('email').touched">Maximum 20 Characters Are Allowed!!</small>
+            </div>
+            <button class="btn btn-success" (click)="onSubmit()" [disabled]="!addForm.valid" >Save</button>
+        </form>
+    </div>
+</div>

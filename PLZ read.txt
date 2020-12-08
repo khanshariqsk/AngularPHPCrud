@@ -1,0 +1,16 @@
+1) I have used angular 8 as frontend and php for backend and SQl for Database....
+
+2)Due to CORS origin policy i have used CORS extension in Chrome Browser...SO plz add it before running the program...
+Here is the link below:-----
+https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
+
+3)For styling i have used  CSS Framework Bootstrap 4...here is the CDN link below
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+4)I have used xampp server for this projects...so plz add the folder containing inside the backend folder to the htdocs folder of xampp installation directory
+
+5)Finally import database to the phpmyadmin from the Database folder
+
+6)Also I have Attached Screenshots of projects plz do check....
+                  
+                           THANK YOU :)
